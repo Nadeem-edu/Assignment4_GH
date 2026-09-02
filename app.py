@@ -4,7 +4,7 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-API_DATA = {"status": "sucess", "version": "1.0", "data": "JSON Content"}
+API_DATA = {"status": "active", "version": "2.0-beta", "payload": "Updated JSON from Tutedude_new"}
 
 @app.route('/')
 def index():
