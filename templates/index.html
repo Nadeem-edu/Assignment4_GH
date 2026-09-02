@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MongoDB To-Do Application</title>
+    <title>Task Submission Engine</title>
 </head>
 <body>
     <h1>Create New To-Do Item</h1>
+    <!-- Submits payloads directly to your defined backend endpoints -->
     <form action="/submittodoitem" method="POST">
         <label>Item Name:</label><br>
         <input type="text" name="itemName" required><br><br>
-
+        
         <label>Item Description:</label><br>
         <textarea name="itemDescription" required></textarea><br><br>
-
+        
         <button type="submit">Submit Item</button>
     </form>
 </body>
 </html>
+
