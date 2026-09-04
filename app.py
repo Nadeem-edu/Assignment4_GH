@@ -1,5 +1,3 @@
-# app.py (Modified on master_2 branch)
-#Q2. Task-2: Frontend Form with MongoDB Atlas
 from flask import Flask, request, render_template, jsonify, url_for
 from dotenv import load_dotenv
 import os
@@ -24,7 +22,6 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-# Core Assignment Target Route for MongoDB Insertion
 @app.route('/submittodoitem', methods=['POST'])
 def submit():
     if collection is None:
